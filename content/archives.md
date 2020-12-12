@@ -1,8 +1,8 @@
 ---
 title: "Archives"
-date: 2020-12-13T00:50:17+09:00
-# draft: true
-layout: "archives" # is necessary
-url: "/archives"
-summary: "archives"
+layout: "archives"
+url: "/archives/"
+summary: archives
+date: 2020-12-13T08:44:41+09:00
 ---
+

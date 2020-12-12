@@ -1,7 +1,7 @@
 ---
 title: "Search"
-date: 2020-12-13T00:50:33+09:00
-# draft: true
-layout: "search" # is necessary
-summary: "search"
+layout: "search"
+summary: search
+date: 2020-12-13T08:44:49+09:00
 ---
+
