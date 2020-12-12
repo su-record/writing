@@ -19,7 +19,7 @@ fi
 hugo -t hugo-PaperMod
 
 # Go To Public folder
-cd publics
+cd public
 # Add changes to git.
 git add .
 
