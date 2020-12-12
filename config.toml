@@ -1,6 +1,6 @@
-baseURL = "https://type-su.github.io/"
+baseURL = "https://su-record.github.io/"
 # languageCode = "en-us"
-title = "type Su"
+title = "Su record"
 theme = "hugo-PaperMod"
 
 enableInlineShortcodes = true
@@ -8,7 +8,7 @@ enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
 buildExpired = false
-disqusShortname = "yourdiscussshortname"
+disqusShortname = "su-record"
 
 [minify]
 disableXML = true
