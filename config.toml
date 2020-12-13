@@ -39,6 +39,7 @@ author = "Su"
 ShowReadingTime = true
 defaultTheme = "auto"
 ShowShareButtons = true
+comments = true
 
 [params.assets]
 disableFingerprinting = true
@@ -53,7 +54,7 @@ imageHeight = 120
 
   [[params.profileMode.buttons]]
   name = "Github"
-  url = "https://github.com/"
+  url = "https://github.com/su-record/writing"
 
   [[params.profileMode.buttons]]
   name = "Tags"
