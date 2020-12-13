@@ -47,7 +47,6 @@ home = [ "HTML", "RSS", "JSON" ]
 
 [params]
 env = "production"
-description = "su all life"
 author = "Su"
 ShowReadingTime = true
 defaultTheme = "auto"
@@ -59,8 +58,9 @@ disableFingerprinting = true
 
 [params.profileMode]
 enabled = true
-title = "늦어도 괜찮아 멈추지 말자"
-imageUrl = "/static/images/me.jpg"
+title = "Welcome to my record"
+description = "늦어도 괜찮아 멈추지 말자"
+imageUrl = "/images/me.jpg"
 imageTitle = "it's me"
 imageWidth = 120
 imageHeight = 120
@@ -69,9 +69,13 @@ imageHeight = 120
   name = "Github"
   url = "https://github.com/su-record/writing"
 
+  # [[params.profileMode.buttons]]
+  # name = "Tags"
+  # url = "tags"
+
   [[params.profileMode.buttons]]
-  name = "Tags"
-  url = "tags"
+  name = "Posts"
+  url = "posts"
 
 [taxonomies]
 category = "categories"
