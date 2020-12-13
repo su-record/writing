@@ -59,7 +59,7 @@ disableFingerprinting = true
 [params.profileMode]
 enabled = true
 title = "Welcome to my record"
-description = "늦어도 괜찮아 멈추지 말자"
+subtitle = "늦어도 괜찮아 멈추지 말자"
 imageUrl = "/images/me.jpg"
 imageTitle = "it's me"
 imageWidth = 120
@@ -76,6 +76,10 @@ imageHeight = 120
   [[params.profileMode.buttons]]
   name = "Posts"
   url = "posts"
+
+  [[params.profileMode.buttons]]
+  name = "Gallery"
+  url = "posts/insta"
 
 [taxonomies]
 category = "categories"

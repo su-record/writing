@@ -43,6 +43,10 @@
   {{- end }}
   <div class="post-content">
     {{- partial "anchored_headings.html" .Content -}}
+
+    {{- if in .Title "Insta"}}
+      {{- partial "insta_feed.html" . -}}
+    {{- end }}
   </div>
   <footer class="post-footer">
     {{- if .Params.tags }}

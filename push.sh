@@ -1,6 +1,12 @@
 #!/bin/bash
 echo -e "build push"
 
+# Build the project.
+hugo -t hugo-PaperMod
+
+# Go To Public folder
+cd public
+
 # check OS
 OSTYPE="`uname -s`"
 
@@ -15,11 +21,6 @@ elif [[ "$OSTYPE" == "msys"* ]]; then
     git config --global core.autocrlf true
 fi
 
-# Build the project.
-hugo -t hugo-PaperMod
-
-# Go To Public folder
-cd public
 # Add changes to git.
 git add .
 
@@ -36,6 +37,19 @@ git push origin master
 # Come Back up to the Project Root
 cd ..
 
+# check OS
+OSTYPE="`uname -s`"
+
+if [[ "$OSTYPE" == "linux"* ]]; then
+    # ...
+    git config --global core.autocrlf input
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    # Mac OSX
+    git config --global core.autocrlf input
+elif [[ "$OSTYPE" == "msys"* ]]; then
+    # Lightweight shell and GNU utilities compiled for Windows (part of MinGW)
+    git config --global core.autocrlf true
+fi
 
 # blog 저장소 Commit & Push
 git add .

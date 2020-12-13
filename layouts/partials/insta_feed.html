@@ -1,0 +1,32 @@
+{{ $url := "https://graph.instagram.com/17841408006262934/media?fields=id,media_type,media_url,permalink,thumbnail_url,username,caption&access_token=IGQVJWRXpGdy1qaDBVNHgwYU9fTmlqSEgwQ1BOZA2RsWWVzSVBpXzJRbFZAhaHAwbGFRa0d2ZADd1aklnWWs5S1JqUmMwYUItNWZADTy04aGlOUENxemdaTmVPSkVxV2liMGphRkhlV285dExnaFB0LVZAXYwZDZD"}}
+
+{{ $json := getJSON $url }}
+{{ $feed := $json.data}}
+
+<ul id="feeds" class="insta-feeds">
+  {{ range $feed }}
+  <li class="feed-item">
+    <a href="{{ .permalink }}" target="_blank">
+      {{ if or (eq .media_type "IMAGE") (eq .media_type "CAROUSEL_ALBUM") }}
+        <img src="{{ .media_url }}" alt="">
+      {{ else if eq .media_type "VIDEO" }}
+        <video src="{{ .media_url }}"></video>
+      {{ end }}
+
+      <span>
+        <span class="username">{{ .username }}</span>
+        <span class="caption">{{ .caption }}</span>
+      </span>
+    </a>
+  </li>
+  {{ end }}
+</ul>
+
+<!-- <div>
+  {{ if and $json $json.paging.previous }}
+    <a class="btn prev" href="{{ $json.paging.previous }}">이전</a>
+  {{ end }}
+  {{ if and $json $json.paging.next }}
+    <a class="btn next" href="{{ $url := $json.paging.next }}#feeds">다음</a>
+  {{ end }}
+</div> -->
