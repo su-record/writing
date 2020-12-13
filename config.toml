@@ -60,7 +60,7 @@ disableFingerprinting = true
 [params.profileMode]
 enabled = true
 title = "늦어도 괜찮아 멈추지 말자"
-imageUrl = "resources/_gen/images/me.jpg"
+imageUrl = "/static/images/me.jpg"
 imageTitle = "it's me"
 imageWidth = 120
 imageHeight = 120
