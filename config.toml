@@ -25,6 +25,11 @@ name = "Categories"
 url = "categories"
 weight = 2
 
+[[menu.main]]
+name = "Series"
+url = "series"
+weight = 2
+
 
 [[menu.main]]
 name = "Tags"
@@ -46,7 +51,7 @@ description = "su all life"
 author = "Su"
 ShowReadingTime = true
 defaultTheme = "auto"
-ShowShareButtons = true
+ShowShareButtons = false
 comments = true
 
 [params.assets]
@@ -55,8 +60,8 @@ disableFingerprinting = true
 [params.profileMode]
 enabled = true
 title = "늦어도 괜찮아 멈추지 말자"
-imageUrl = "#"
-imageTitle = "my image"
+imageUrl = "resources/_gen/images/me.jpg"
+imageTitle = "it's me"
 imageWidth = 120
 imageHeight = 120
 
